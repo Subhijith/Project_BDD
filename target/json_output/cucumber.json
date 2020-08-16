@@ -1,0 +1,115 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-08-16T09:12:06.882Z",
+        "line": 4,
+        "name": "Test login with valid credentials",
+        "description": "",
+        "id": "test-login-with-valid-credentials;test-login-with-valid-credentials",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is able to acess login page",
+            "match": {
+              "location": "step_definations.Step_Definations.user_is_able_to_acess_login_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user is on login page",
+            "match": {
+              "location": "step_definations.Step_Definations.user_is_on_login_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters username and password",
+            "match": {
+              "location": "step_definations.Step_Definations.user_enters_username_and_password()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "clicks on login button",
+            "match": {
+              "location": "step_definations.Step_Definations.clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on home page",
+            "match": {
+              "location": "step_definations.Step_Definations.user_is_on_home_page()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user access menu test data",
+            "match": {
+              "location": "step_definations.Step_Definations.user_access_menu_test_data()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user clicks on logout",
+            "match": {
+              "location": "step_definations.Step_Definations.user_clicks_on_logout()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user logged out of application and back to login page",
+            "match": {
+              "location": "step_definations.Step_Definations.user_logged_out_of_application_and_back_to_login_page()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Test login with valid credentials",
+    "description": "",
+    "id": "test-login-with-valid-credentials",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/BDD-T1.feature",
+    "tags": []
+  }
+]
