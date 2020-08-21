@@ -1,14 +1,25 @@
 package step_definations;
 
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class Step_Definations {
+	
+	WebDriver driver;
 
 	@Given("User is able to acess login page")
 	public void user_is_able_to_acess_login_page() {
 	   System.out.println("Navigate to website URL..");
+	   String path = System.getProperty("user.dir");
+	   System.setProperty("webdriver.gecko.driver",path+"/geckodriver.exe");
+	   driver = new FirefoxDriver();
+	   
+	   
+	   
 	}
 
 	@Given("user is on login page")
@@ -44,6 +55,7 @@ public class Step_Definations {
 	@Then("user logged out of application and back to login page")
 	public void user_logged_out_of_application_and_back_to_login_page() {
 		System.out.println("User logged out successfully..and user is on home page..");
+		driver.close();
 	}
 
 	
