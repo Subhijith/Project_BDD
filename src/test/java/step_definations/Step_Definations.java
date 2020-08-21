@@ -3,6 +3,7 @@ package step_definations;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -43,6 +44,8 @@ public class Step_Definations {
 		System.out.println("Is displayed: "+dis);
 		
 		inputBox.sendKeys("linkedin");
+		
+		inputBox.sendKeys(Keys.ENTER);
 		
 		WebElement linkedin = driver.findElement(By.xpath("//*[contains(text(),\"LinkedIn: Log In or Sign Up\")]"));
 		System.out.println("found text is :"+linkedin.getText());
