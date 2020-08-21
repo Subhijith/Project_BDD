@@ -46,6 +46,7 @@ public class Step_Definations {
 		inputBox.sendKeys("linkedin");
 		
 		inputBox.sendKeys(Keys.ENTER);
+		Thread.sleep(3000);
 		
 		WebElement linkedin = driver.findElement(By.xpath("//*[contains(text(),\"LinkedIn: Log In or Sign Up\")]"));
 		System.out.println("found text is :"+linkedin.getText());
